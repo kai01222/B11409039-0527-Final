@@ -120,7 +120,7 @@ Updated
 ## 四、 Git 提交紀錄 (Commit History)  (共2小題，總共13分)
 
 ### 4.1. 請執行 `git log --oneline` 並將 Commit 紀錄貼在此處，以證明你的開發流程(此小題6分)
-
+c2edd96 (HEAD -> master) MESSAGE
 
 ```log
 # 請在此處貼上 git log 內容
