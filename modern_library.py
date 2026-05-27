@@ -52,12 +52,12 @@ def save_records(records: list[Book], filepath: str = F_NAME) -> bool:
         return False
 
 # ── 商業邏輯 ─────────────────────────────────────────────
-def isbn_exists(records: list[Book], isbn: str) -> bool:
+def is_isbn_exists(records: list[Book], isbn: str) -> bool:
     return any(book["isbn"] == isbn for book in records)
 
 
 def add_book(records: list[Book], title: str, isbn: str, status: str) -> bool:
-    if isbn_exists(records, isbn):
+    if is_isbn_exists(records, isbn):
         return False
     records.append({"title": title, "isbn": isbn, "status": status})
     return True
